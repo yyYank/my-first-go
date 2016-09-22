@@ -1,7 +1,7 @@
 /*
   http://golang.jp/go_tutorial#index04
 */
-package main
+package echo
 
 import (
 	"testing"
@@ -9,5 +9,5 @@ import (
 
 
 func testEcho(t testing.T) {
-	echo()
+	Echo()
 }

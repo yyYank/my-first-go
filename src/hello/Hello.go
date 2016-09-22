@@ -1,9 +1,11 @@
 package main
 
 import "fmt"
+import "echo"
 
 func main() {
 	fmt.Println(Hello())
+	echo.Echo()
 }
 
 func Hello() string {

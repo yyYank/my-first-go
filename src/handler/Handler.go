@@ -17,7 +17,6 @@ type Handler interface {
 }
 
 type HogeHandler struct {
-
 }
 
 func (h *HogeHandler) handle(e Event) {

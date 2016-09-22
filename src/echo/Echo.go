@@ -1,7 +1,7 @@
 /*
   http://golang.jp/go_tutorial#index04
 */
-package main
+package echo
 
 import (
 	"os"
@@ -17,7 +17,7 @@ const (
 	Newline = "\n"
 )
 
-func echo() {
+func Echo() {
 	//  パラメータリストをフラグに設定
 	flag.Parse()
 	var s string = ""
