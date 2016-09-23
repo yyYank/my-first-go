@@ -17,7 +17,7 @@ const (
 	Newline = "\n"
 )
 
-func Echo() {
+func Run() {
 	//  パラメータリストをフラグに設定
 	flag.Parse()
 	var s string = ""

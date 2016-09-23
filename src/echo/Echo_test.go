@@ -9,5 +9,5 @@ import (
 
 
 func testEcho(t testing.T) {
-	Echo()
+	Run()
 }

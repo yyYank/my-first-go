@@ -5,7 +5,7 @@ import "echo"
 
 func main() {
 	fmt.Println(Hello())
-	echo.Echo()
+	echo.Run()
 }
 
 func Hello() string {
