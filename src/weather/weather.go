@@ -6,9 +6,6 @@ import (
 
 
 /*
-このあたりを参考にした
- http://qiita.com/taizo/items/c397dbfed7215969b0a5
- http://cuto.unirita.co.jp/gostudy/post/standard-library-xml/
  */
 
 func main() {
