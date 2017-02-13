@@ -1,15 +1,20 @@
-package weather
+package main
 
 import (
-	"net/http"
+	"github.com/PuerkitoBio/goquery"
+	"fmt"
 )
 
-
-/*
- * 天気情報の取得
+/**
+ * goqueryでyahoo天気からそれとなくデータを取る
  */
 func main() {
-	url := "http://yyyank.blogspot.com/feeds/posts/default?max-results=999"
-	response, _ := http.Get(url)
-	defer response.Body.Close()
+	doc, err := goquery.NewDocument("http://weather.yahoo.co.jp/weather/13/4410.html")
+	if err != nil {
+		fmt.Print("url scarapping failed")
+	}
+	doc.Find("img").Each(func(_ int, s *goquery.Selection) {
+		alt, _ := s.Attr("alt")
+		fmt.Println(alt)
+	})
 }
