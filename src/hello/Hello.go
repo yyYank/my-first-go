@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-import "echo"
+import "../echo"
 
 func main() {
 	fmt.Println(Hello())
