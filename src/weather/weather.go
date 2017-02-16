@@ -9,12 +9,12 @@ import (
  * goqueryでyahoo天気からそれとなくデータを取る
  */
 func main() {
-	doc, err := goquery.NewDocument("http://weather.yahoo.co.jp/weather/13/4410.html")
+	doc, err := goquery.NewDocument("http://weather.goo.ne.jp/")
 	if err != nil {
 		fmt.Print("url scarapping failed")
 	}
-	doc.Find("img").Each(func(_ int, s *goquery.Selection) {
-		alt, _ := s.Attr("alt")
-		fmt.Println(alt)
+	doc.Find(".overview").Each(func(_ int, s *goquery.Selection) {
+		var res = s.Find("p").Text()
+		fmt.Println(res)
 	})
 }
