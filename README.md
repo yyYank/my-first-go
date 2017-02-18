@@ -1,7 +1,7 @@
 # my-first-go
 
 
-golangを学ぶためにウダウダ書いたりためしたり。
+    golangを学ぶためにウダウダ書いたりためしたり。
 
 
 ## src/blogfetch
